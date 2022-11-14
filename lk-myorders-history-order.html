@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Личный кабинет (Мои заказы - заказ)</title>
+
+  <!-- favicons -->
+<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="192x192" href="img/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon.svg">
+<link rel="shortcut icon" href="img/favicon/favicon.svg" type="image/x-icon">
+<link rel="icon" href="img/favicon/favicon.svg" type="image/x-icon">
+<meta name="msapplication-tilecolor" content="#fff">
+<meta name="msapplication-tileimage" content="img/favicon/favicon.svg">
+<meta name="theme-color" content="#59A610">
+
+<!-- CSS -->
+<link href="css/fancybox.min.css" type="text/css" rel="stylesheet">
+<!-- SWIPER -->
+<link href="css/swiper-bundle.min.css" rel="stylesheet">
+<!-- OWL -->
+<link href="css/air-datepicker.min.css" type="text/css" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" /> -->
+<link href="css/style.min.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+<header class="header">
+  <div class="container header__container">
+    <!-- Toggle button -->
+    <div class="nav__toggle" id="nav-toggle">
+      <i class="icons ic-menu"></i>
+    </div>
+    <a href="index.html" class="logo">
+      <img src="img/logo.svg" alt="Логотип компании">
+    </a>
+    <nav class="nav">
+      <ul class="nav__list scrolls">
+        <li class="nav__item dropdown">
+          <a href="catalog.html" class="nav__link dropbtn">Каталог</a>
+          <div class="dropdown-content">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#" class="nav__link">мобильные аксессуары</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">тюнинг авто</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Багаж</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">эксклюзивные подарки</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">обувные ложки</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">динозавры</a></li>
+              <li class="nav__item"><a href="#" class="nav__link nav__link--disable">кальяны</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav__item"><a href="#" class="nav__link">Карбон</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Кастом</a></li>
+        <li class="nav__item"><a href="#cont" class="nav__link">Контакты</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Бизнесам</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Портфолио</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Отследить заказ</a></li>
+      </ul>
+    </nav>
+    <div class="header__links">
+      <div class="profile-drop dropdown">
+        <a href="#" class="dropbtn"><i class="icons ic-profile"></i></a>
+        <div class="dropdown-content">
+          <div class="dropdown-head">
+            <a href="#" class="to-state" data-state="login">ВОЙТИ</a><span>|</span><a
+              href="registr.html">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">PRIME LOYALTY</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">мои данные</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">история заказов</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">адресная книга</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">избранное</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">премиальным клиентам</a></li>
+          </ul>
+        </div>
+      </div>
+      <a href="#"><i class="icons ic-like"></i></a>
+      <a href="order.html"><i class="icons ic-cart"></i></a>
+    </div>
+    <div class="nav__menu" id="nav-menu">
+      <img src="img/header/menu-logo.svg" class="menu__logo" alt="">
+      <nav class="nav">
+        <ul class="nav__list scrolls">
+          <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Карбон</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Кастом</a></li>
+          <li class="nav__item"><a href="#cont" class="nav__link">Контакты</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Бизнесам</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Портфолио</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Отследить заказ</a></li>
+        </ul>
+        <ul class="nav__list scrolls">
+          <li class="nav__item"><a href="#" class="nav__link to-state" data-state="login">войти в аккаунт</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Prime Loyal</a></li>
+          <li class="nav__item"><a href="#" class="nav__link to-state" data-state="callback">позвонить нам</a></li>
+        </ul>
+        <ul class="socials">
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3713_808)">
+                  <path
+                    d="M8.99758 5.99872C7.34499 5.99872 5.99636 7.34738 5.99636 9C5.99636 10.6526 7.34499 12.0013 8.99758 12.0013C10.6502 12.0013 11.9988 10.6526 11.9988 9C11.9988 7.34738 10.6502 5.99872 8.99758 5.99872ZM17.999 9C17.999 7.75716 18.0103 6.52558 17.9405 5.28499C17.8707 3.84402 18.0534 2.05371 16.9997 1C15.9437 -0.0559635 14.1557 0.129006 12.7148 0.0592092C11.472 -0.0105879 10.2404 0.000669702 8.99983 0.000669702C7.75701 0.000669702 6.52546 -0.0105879 5.28489 0.0592092C3.84395 0.129006 2.05367 -0.053712 0.999981 1C-0.0559625 2.05596 0.129004 3.84402 0.0592081 5.28499C-0.0105877 6.52783 0.000669689 7.75941 0.000669689 9C0.000669689 10.2406 -0.0105877 11.4744 0.0592081 12.715C0.129004 14.156 -0.053711 15.9463 0.999981 17C2.05593 18.056 3.84395 17.871 5.28489 17.9408C6.52771 18.0106 7.75927 17.9993 8.99983 17.9993C10.2426 17.9993 11.4742 18.0106 12.7148 17.9408C14.1557 17.871 15.946 18.0537 16.9997 17C18.0556 15.944 17.8707 14.156 17.9405 12.715C18.0125 11.4744 17.999 10.2428 17.999 9ZM8.99758 13.6179C6.44215 13.6179 4.3798 11.5555 4.3798 9C4.3798 6.44452 6.44215 4.38213 8.99758 4.38213C11.553 4.38213 13.6154 6.44452 13.6154 9C13.6154 11.5555 11.553 13.6179 8.99758 13.6179ZM13.8045 5.27148C13.2078 5.27148 12.726 4.78966 12.726 4.193C12.726 3.59635 13.2078 3.11452 13.8045 3.11452C14.4011 3.11452 14.8829 3.59635 14.8829 4.193C14.8831 4.33468 14.8554 4.475 14.8012 4.60593C14.7471 4.73686 14.6677 4.85582 14.5675 4.956C14.4673 5.05618 14.3483 5.13561 14.2174 5.18975C14.0865 5.24389 13.9462 5.27166 13.8045 5.27148Z" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_3713_808">
+                    <rect width="18" height="18" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.26 1.26C0 2.532 0 4.566 0 8.64V9.36C0 13.428 0 15.462 1.26 16.74C2.532 18 4.566 18 8.64 18H9.36C13.428 18 15.462 18 16.74 16.74C18 15.468 18 13.434 18 9.36V8.64C18 4.572 18 2.538 16.74 1.26C15.468 0 13.434 0 9.36 0H8.64C4.572 0 2.538 0 1.26 1.26ZM3.03516 5.4767C3.13116 10.1567 5.47116 12.9647 9.57516 12.9647H9.58116H9.81516V10.2887C11.3212 10.4387 12.4612 11.5427 12.9172 12.9647H15.0472C14.8287 12.1567 14.4414 11.4041 13.9109 10.7567C13.3803 10.1093 12.7185 9.58168 11.9692 9.2087C12.6406 8.79978 13.2206 8.25678 13.6728 7.61362C14.1249 6.97046 14.4396 6.24096 14.5972 5.4707H12.6652C12.2452 6.9587 10.9972 8.3087 9.81516 8.4347V5.4767H7.87716V10.6607C6.67716 10.3607 5.16516 8.9087 5.09916 5.4767H3.03516Z" />
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3713_828)">
+                  <path
+                    d="M3 0C1.338 0 0 1.33798 0 2.99996V15C0 16.662 1.338 18 3 18H15C16.662 18 18 16.662 18 15V2.99996C18 1.33798 16.662 0 15 0H3ZM14.1811 4.28761C14.5739 4.31936 14.6889 4.69293 14.5942 5.13131L12.8408 13.2525C12.7268 13.7806 12.3301 13.8458 11.852 13.4971L9.375 11.6895L8.01416 13.0034C7.80068 13.2092 7.404 13.269 7.28613 12.9082L6.26513 9.77775L3.85108 9.01606C2.9203 8.72205 3.58699 8.30502 3.90238 8.18257L13.6934 4.3813C13.8885 4.30561 14.0503 4.27842 14.1812 4.28891L14.1811 4.28761ZM12.4439 5.97803C12.3844 5.98937 12.3175 6.01405 12.2563 6.0526L6.73242 9.55361C6.69942 9.57345 6.66274 9.5706 6.69724 9.67662L7.59079 12.4188L7.77244 10.5554C7.77618 10.5194 7.77768 10.4959 7.81781 10.4602L12.4819 6.27371C12.7395 6.04241 12.622 5.94625 12.4438 5.97786L12.4439 5.97803Z" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_3713_828">
+                    <rect width="18" height="18" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="nav sub-nav">
+        <ul class="nav__list scrolls">
+          <li class="nav__item"><a href="#" class="nav__link nav__link-back">меню</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Мобильные Аксессуары</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Тюнинг авто</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Багаж</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Эксклюзивные подарки</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Обувные ложки</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Динозавры</a></li>
+          <li class="nav__item"><a href="#" class="nav__link nav__link--disable">Кальяны</a></li>
+        </ul>
+      </nav>
+      <nav class="nav sub-nav">
+        <ul class="nav__list scrolls">
+          <li class="nav__item"><a href="#" class="nav__link nav__link-back">мобильные аксессуары</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Чехлы на iPhone</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Чехлы на Samsung</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Airpods Pro</a></li>
+        </ul>
+      </nav>
+      <div class="nav__close" id="nav-close"><i class="icons ic-close"></i></div>
+    </div>
+  </div>
+</header>
+
+    <main class="page-w">
+
+      <section class="lk">
+  <div class="container">
+    <h2 class="lk-maintitle">добро пожаловать, имя!</h2>
+    <!------ lktabs ------>
+    <div class="lktabs">
+      <!-- Кнопки -->
+      <ul class="lktabs-nav">
+        <li><a href="lk-loyalty.html">prime loyalty</a></li>
+        <li><a href="lk-myinfo.html">мои данные</a></li>
+        <li><a href="lk-myorders-history.html" class="active">история заказов</a></li>
+        <li><a href="lk-adressbook.html">адресная книга</a></li>
+        <li><a href="lk-favourites.html">избранное</a></li>
+        <li><a href="lk-premium.html">премиальным клиентам</a></li>
+        <li><a href="lk-special.html">специально для вас</a></li>
+      </ul>
+      <!-- Контент -->
+      <div class="lktabs-items">
+        <div class="lktabs-item iz">
+          <!------ iztabs ------>
+          <div class="iztabs">
+            <!-- Кнопки -->
+            <ul class="iztabs-nav">
+              <li><a href="#iztab-actual" class="link-back"><i class="icons ic-arrowb"></i>Заказ: 12345677890</a></li>
+            </ul>
+            <!-- Контент -->
+            <div class="iztabs-items">
+              <div class="iztabs-item">
+                <div class="iz-indicator-wrap">
+                  <div class="iz-indicator-title">Статус</div>
+                  <ul class="iz-indicator">
+                    <li class="iz-indicator__item"></li>
+                    <li class="iz-indicator__line"></li>
+                    <li class="iz-indicator__item"></li>
+                    <li class="iz-indicator__line"></li>
+                    <li class="iz-indicator__item iz-indicator__item--check"><span>заказ отправлен</span></li>
+                    <li class="iz-indicator__line iz-indicator__line--check"></li>
+                    <li class="iz-indicator__item"></li>
+                  </ul>
+                </div>
+                <div class="iz-cards">
+                  <ul class="iz-cards-group">
+                    <li class="iz-cards-title">контактные данные</li>
+                    <li>Г-жа Маша Петрова</li>
+                    <li>Дата рождения: Фев 2, 1999</li>
+                    <li>Телефон: +89999999999</li>
+                    <li>Email получателя: blabla@gmail.com</li>
+                  </ul>
+                  <ul class="iz-cards-group">
+                    <li class="iz-cards-title">адрес доставки</li>
+                    <li>Получатель: Г-жа Имя Фамилия</li>
+                    <li>лица: какая-то улица, 45</li>
+                    <li>Область: Свердловская обл.</li>
+                    <li>Индекс: 620089</li>
+                    <li>Город: Екатеринбург</li>
+                  </ul>
+                </div>
+                <div class="iz-order">
+                  <div class="iz-cards-title">состав заказа</div>
+                  <div class="iz-order__cards">
+                    <div class="iz-order__cards-item">
+                      <img src="img/order/product-img.jpg" class="iz-order__cards-img" alt="">
+                      <div class="iz-order__cards-info">
+                        <div class="iz-order__cards-main">
+                          <div class="iz-order__cards-name">Цельный чехол из карбона</div>
+                          <div class="iz-order__cards-subname">iPhone 13 Pro Max</div>
+                        </div>
+                        <div class="iz-order__cards-price">5000₽</div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="iz-order__total">
+                    <div class="iz-order__total-group">
+                      <div class="iz-order__total-title-sm">Сумма заказа:</div>
+                      <div class="iz-order__total-price-sm">5000₽</div>
+                    </div>
+                    <div class="iz-order__total-group">
+                      <div class="iz-order__total-title-sm">Бонусов списано:</div>
+                      <div class="iz-order__total-price-sm">-200</div>
+                    </div>
+                    <div class="iz-order__total-group">
+                      <div class="iz-order__total-title">Итоговая сумма:</div>
+                      <div class="iz-order__total-price">5000₽</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <!--------Footer--------->
+<footer class="footer">
+  <div class="container">
+    <a href="index.html" class="footer__logo">
+      <img src="img/logo.svg" alt="">
+      PRIME CARBON
+    </a>
+    <div class="footer__container">
+      <nav class="footer-nav">
+        <div class="footer-nav-title">навигация</div>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item"><a href="catalog.html" class="footer-nav__link">КАТАЛОГ</a></li>
+          <li class="footer-nav__item"><a href="#" class="footer-nav__link">КАРБОН</a></li>
+          <li class="footer-nav__item"><a href="#" class="footer-nav__link">КАСТОМ</a></li>
+          <li class="footer-nav__item"><a href="#" class="footer-nav__link">КОРПОРАТИВНЫМ КЛИЕНТАМ</a></li>
+          <li class="footer-nav__item"><a href="#" class="footer-nav__link">ПОРТФОЛИО</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-nav">
+        <div class="footer-nav-title">контакты</div>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">+7 929 202-24-56 — НОМЕР <br>ТЕЛЕФОНА ДЛЯ МЕССЕНДЖЕРОВ</li>
+          <li class="footer-nav__item"><a href="mailto:primecarbon@yandex.ru" class="footer-nav__link">PRIMECARBON@YANDEX.RU</a></li>
+          <li class="footer-nav__item footer-nav__item--fluid"><a href="#" class="link"><span>узнать, где мой заказ?</span></a></li>
+        </ul>
+      </nav>
+      <nav class="footer-nav">
+        <div class="footer-nav-title">ИНН / КПП</div>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">6686127633 / 668601001</li>
+        </ul>
+        <div class="footer-nav-title">Юр. Адрес</div>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">г. Екатеринбург ул.&nbsp;Фронтовых Бригад, д.&nbsp;18/2, помещ. 201</li>
+        </ul>
+      </nav>
+      <a href="#" class="link link-mob"><span>узнать, где мой заказ?</span></a>
+    </div>
+    <div class="footer__bot">
+      <div class="footer__copy">2022 © Все права защищены</div>
+      <ul class="socials">
+        <li class="socials__item">
+          <a href="#" class="socials__link">
+            <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_3713_808)">
+                <path
+                  d="M8.99758 5.99872C7.34499 5.99872 5.99636 7.34738 5.99636 9C5.99636 10.6526 7.34499 12.0013 8.99758 12.0013C10.6502 12.0013 11.9988 10.6526 11.9988 9C11.9988 7.34738 10.6502 5.99872 8.99758 5.99872ZM17.999 9C17.999 7.75716 18.0103 6.52558 17.9405 5.28499C17.8707 3.84402 18.0534 2.05371 16.9997 1C15.9437 -0.0559635 14.1557 0.129006 12.7148 0.0592092C11.472 -0.0105879 10.2404 0.000669702 8.99983 0.000669702C7.75701 0.000669702 6.52546 -0.0105879 5.28489 0.0592092C3.84395 0.129006 2.05367 -0.053712 0.999981 1C-0.0559625 2.05596 0.129004 3.84402 0.0592081 5.28499C-0.0105877 6.52783 0.000669689 7.75941 0.000669689 9C0.000669689 10.2406 -0.0105877 11.4744 0.0592081 12.715C0.129004 14.156 -0.053711 15.9463 0.999981 17C2.05593 18.056 3.84395 17.871 5.28489 17.9408C6.52771 18.0106 7.75927 17.9993 8.99983 17.9993C10.2426 17.9993 11.4742 18.0106 12.7148 17.9408C14.1557 17.871 15.946 18.0537 16.9997 17C18.0556 15.944 17.8707 14.156 17.9405 12.715C18.0125 11.4744 17.999 10.2428 17.999 9ZM8.99758 13.6179C6.44215 13.6179 4.3798 11.5555 4.3798 9C4.3798 6.44452 6.44215 4.38213 8.99758 4.38213C11.553 4.38213 13.6154 6.44452 13.6154 9C13.6154 11.5555 11.553 13.6179 8.99758 13.6179ZM13.8045 5.27148C13.2078 5.27148 12.726 4.78966 12.726 4.193C12.726 3.59635 13.2078 3.11452 13.8045 3.11452C14.4011 3.11452 14.8829 3.59635 14.8829 4.193C14.8831 4.33468 14.8554 4.475 14.8012 4.60593C14.7471 4.73686 14.6677 4.85582 14.5675 4.956C14.4673 5.05618 14.3483 5.13561 14.2174 5.18975C14.0865 5.24389 13.9462 5.27166 13.8045 5.27148Z" />
+              </g>
+              <defs>
+                <clipPath id="clip0_3713_808">
+                  <rect width="18" height="18" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link">
+            <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M1.26 1.26C0 2.532 0 4.566 0 8.64V9.36C0 13.428 0 15.462 1.26 16.74C2.532 18 4.566 18 8.64 18H9.36C13.428 18 15.462 18 16.74 16.74C18 15.468 18 13.434 18 9.36V8.64C18 4.572 18 2.538 16.74 1.26C15.468 0 13.434 0 9.36 0H8.64C4.572 0 2.538 0 1.26 1.26ZM3.03516 5.4767C3.13116 10.1567 5.47116 12.9647 9.57516 12.9647H9.58116H9.81516V10.2887C11.3212 10.4387 12.4612 11.5427 12.9172 12.9647H15.0472C14.8287 12.1567 14.4414 11.4041 13.9109 10.7567C13.3803 10.1093 12.7185 9.58168 11.9692 9.2087C12.6406 8.79978 13.2206 8.25678 13.6728 7.61362C14.1249 6.97046 14.4396 6.24096 14.5972 5.4707H12.6652C12.2452 6.9587 10.9972 8.3087 9.81516 8.4347V5.4767H7.87716V10.6607C6.67716 10.3607 5.16516 8.9087 5.09916 5.4767H3.03516Z" />
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link">
+            <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_3713_828)">
+                <path
+                  d="M3 0C1.338 0 0 1.33798 0 2.99996V15C0 16.662 1.338 18 3 18H15C16.662 18 18 16.662 18 15V2.99996C18 1.33798 16.662 0 15 0H3ZM14.1811 4.28761C14.5739 4.31936 14.6889 4.69293 14.5942 5.13131L12.8408 13.2525C12.7268 13.7806 12.3301 13.8458 11.852 13.4971L9.375 11.6895L8.01416 13.0034C7.80068 13.2092 7.404 13.269 7.28613 12.9082L6.26513 9.77775L3.85108 9.01606C2.9203 8.72205 3.58699 8.30502 3.90238 8.18257L13.6934 4.3813C13.8885 4.30561 14.0503 4.27842 14.1812 4.28891L14.1811 4.28761ZM12.4439 5.97803C12.3844 5.98937 12.3175 6.01405 12.2563 6.0526L6.73242 9.55361C6.69942 9.57345 6.66274 9.5706 6.69724 9.67662L7.59079 12.4188L7.77244 10.5554C7.77618 10.5194 7.77768 10.4959 7.81781 10.4602L12.4819 6.27371C12.7395 6.04241 12.622 5.94625 12.4438 5.97786L12.4439 5.97803Z" />
+              </g>
+              <defs>
+                <clipPath id="clip0_3713_828">
+                  <rect width="18" height="18" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <!--------Modal-------->
+
+<div class="state callback-modal" data-state="callback">
+	<div class="state-box">
+		<div class="close"></div>
+		<div class="sm-title">есть вопросы?</div>
+		<div class="section-subtitle">Мы с удовольствием вам перезвоним для обсуждения деталей!</div>
+    <form action="#" class="form">
+      <label class="form-label">
+        <input type="text" class="form-input" placeholder="Имя Фамилия">
+      </label>
+      <label class="form-label">
+        <input type="number" class="form-input" placeholder="Ваш контактный номер">
+      </label>
+      <div class="form-nav">
+        <button class="link"><span>жду звонка</span><i class="icons ic-arrow-link"></i></button>
+        <div class="form-accept">Нажимая на кнопку вы соглашаетесь с&nbsp;<a href="politika.html">политикой конфиденциальности</a></div>
+      </div>
+    </form>
+	</div>
+</div>
+
+<div class="state login-modal" data-state="login">
+	<div class="state-box">
+		<div class="state-head">
+			<div class="logo-d">
+				<img src="img/logo.svg" alt="">
+				PRIME CARBON
+			</div>
+			<div class="close"></div>
+		</div>
+		<div class="section-title">Войдите в учетную запись</div>
+    <form action="#" class="form">
+			<label class="form-label">
+				<input type="email" class="form-input" placeholder="Ваш E-mail">
+			</label>
+      <label class="form-label">
+        <input type="password" class="form-input" placeholder="пароль">
+      </label>
+      <div class="form-nav">
+				<div class="switch-container">
+					<label for="switch1" class="switch">
+						<input type="checkbox" id="switch1">
+						<span class="slider round"></span>
+					</label>
+					<p class="switch-text">Запомнить меня <i class="icons ic-tooltip tooltip">
+						<span class="tooltiptext">
+							<span>Упрощенный вход</span>
+							При выборе функции «Запомнить меня» будет активирован файл cookie,
+							который позволит вам оставаться авторизованным на сайте даже после завершения сеанса. Для обеспечения безопасности вашей
+							учетной записи используйте эту функцию только
+							на личных устройствах.
+						</span>
+					</i></p>
+				</div>
+        <button class="link"><span>войти</span><i class="icons ic-arrow-link"></i></button>
+      </div>
+			<a class="big-link">забыли пароль?</a>
+			<div class="form-accept">С информацией об использовании ваших данных на этом сайте можно ознакомиться в разделе <a href="politika.html">политика конфиденциальности</a></div>
+    </form>
+		<div class="modal-registr">
+			<div class="modal-registr-text">Новый пользователь?</div>
+			<a href="registr.html" class="big-link">зарегистрируйтесь прямо сейчас</a>
+		</div>
+	</div>
+</div>
+
+<div class="state order-modal" data-state="order">
+	<div class="state-box">
+		<div class="state-head">
+			<div class="section-title">ваша корзина</div>
+			<div class="close"></div>
+		</div>
+    <form action="#" class="form">
+      <div class="modal-registr-text">Ваш заказ:</div>
+      <div class="order-cart__cards">
+        <div class="order-cart__cards-item">
+          <img src="img/order/product-img.jpg" class="order-cart__cards-img" alt="">
+          <div class="order-cart__cards-info">
+            <div class="order-cart__cards-main">
+              <div class="order-cart__cards-name">Цельный чехол из карбона</div>
+              <div class="order-cart__cards-subname">iPhone 13 Pro Max</div>
+            </div>
+						<div class="number">
+							<button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
+							<input type="number" min="0" value="1" readonly>
+							<button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"></button>
+						</div>
+            <div class="order-cart__cards-price">5000₽</div>
+          </div>
+        </div>
+      </div>
+			<label class="form-label">
+				<input type="number" class="form-input" placeholder="Номер вашей карты лояльности">
+			</label>
+			<div class="order-modal-text"><span>Вам будет накоплено 50 бонусов!</span>
+			Сейчас доступно: 200 бонусов. До повышения уровня осталось 800 бонусов.</div>
+      <label for="checkbox2" class="checkbox">
+        <input type="checkbox" id="checkbox2">
+        <span>списать 200 бонусов</span>
+      </label>
+			<div class="order-cart__total">
+				<div class="order-cart__total-title">Итоговая сумма:</div>
+				<div class="order-cart__total-price">5000₽</div>
+			</div>
+      <div class="form-nav">
+        <button class="link"><span>перейти к оплате</span><i class="icons ic-arrow-link"></i></button>
+      </div>
+    </form>
+	</div>
+</div>
+
+<div class="state order-modal" data-state="order-nocard">
+	<div class="state-box">
+		<div class="state-head">
+			<div class="section-title">ваша корзина</div>
+			<div class="close"></div>
+		</div>
+    <form action="#" class="form">
+      <div class="modal-registr-text">Ваш заказ:</div>
+      <div class="order-cart__cards">
+        <div class="order-cart__cards-item">
+          <img src="img/order/product-img.jpg" class="order-cart__cards-img" alt="">
+          <div class="order-cart__cards-info">
+            <div class="order-cart__cards-main">
+              <div class="order-cart__cards-name">Цельный чехол из карбона</div>
+              <div class="order-cart__cards-subname">iPhone 13 Pro Max</div>
+            </div>
+						<div class="number">
+							<button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
+							<input type="number" min="0" value="1" readonly>
+							<button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"></button>
+						</div>
+            <div class="order-cart__cards-price">5000₽</div>
+          </div>
+        </div>
+      </div>
+			<label class="form-label">
+				<input type="number" class="form-input" placeholder="Номер вашей карты лояльности">
+			</label>
+			<div class="order-modal-text"><span>Не являетесь участником нашей программы лояльности?</span>
+			– Зарегистрируйтесь в личном кабинете и получите повышенный бонус на первую покупку.</div>
+			<div class="order-cart__total">
+				<div class="order-cart__total-title">Итоговая сумма:</div>
+				<div class="order-cart__total-price">5000₽</div>
+			</div>
+      <div class="form-nav">
+        <button class="link"><span>перейти к оплате</span><i class="icons ic-arrow-link"></i></button>
+      </div>
+    </form>
+	</div>
+</div>
+
+<div class="state rejection-modal" data-state="rejection">
+	<div class="state-box">
+		<div class="close"></div>
+		<div class="rejection-modal-title">Вы действительно хотите отказаться от программы лояльности <span>Prime Loyal</span>?</div>
+		<button class="rejection-modal-btn">отказаться</button>
+		<button class="rejection-modal-close">сохранить привелегии</button>
+	</div>
+</div>
+
+  </div>
+
+  <!-- Script-->
+<link href="css/fancybox.css" rel="stylesheet">
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
+<!-- Swiper JS -->
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/air-datepicker.min.js"></script>
+<!-- <script src="js/jquery.fancybox.min.js"></script> -->
+<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
+<!-- <script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script> -->
+<script src="js/app.min.js"></script>
+
+</body>
+
+</html>

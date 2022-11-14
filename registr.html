@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Регистрация - шаг 1</title>
+
+  <!-- favicons -->
+<link rel="apple-touch-icon" sizes="57x57" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="60x60" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="76x76" href="img/favicon/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="120x120" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="144x144" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="152x152" href="img/favicon/favicon.svg">
+<link rel="apple-touch-icon" sizes="180x180" href="img/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="192x192" href="img/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon.svg">
+<link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon.svg">
+<link rel="shortcut icon" href="img/favicon/favicon.svg" type="image/x-icon">
+<link rel="icon" href="img/favicon/favicon.svg" type="image/x-icon">
+<meta name="msapplication-tilecolor" content="#fff">
+<meta name="msapplication-tileimage" content="img/favicon/favicon.svg">
+<meta name="theme-color" content="#59A610">
+
+<!-- CSS -->
+<link href="css/fancybox.min.css" type="text/css" rel="stylesheet">
+<!-- SWIPER -->
+<link href="css/swiper-bundle.min.css" rel="stylesheet">
+<!-- OWL -->
+<link href="css/air-datepicker.min.css" type="text/css" rel="stylesheet">
+<!-- <link rel="stylesheet" href="https://cdn.plyr.io/3.7.2/plyr.css" /> -->
+<link href="css/style.min.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+  <div class="wrapper">
+
+    <!-- header -->
+<header class="header">
+  <div class="container header__container">
+    <!-- Toggle button -->
+    <div class="nav__toggle" id="nav-toggle">
+      <i class="icons ic-menu"></i>
+    </div>
+    <a href="index.html" class="logo">
+      <img src="img/logo.svg" alt="Логотип компании">
+    </a>
+    <nav class="nav">
+      <ul class="nav__list scrolls">
+        <li class="nav__item dropdown">
+          <a href="catalog.html" class="nav__link dropbtn">Каталог</a>
+          <div class="dropdown-content">
+            <ul class="nav__list">
+              <li class="nav__item"><a href="#" class="nav__link">мобильные аксессуары</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">тюнинг авто</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">Багаж</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">эксклюзивные подарки</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">обувные ложки</a></li>
+              <li class="nav__item"><a href="#" class="nav__link">динозавры</a></li>
+              <li class="nav__item"><a href="#" class="nav__link nav__link--disable">кальяны</a></li>
+            </ul>
+          </div>
+        </li>
+        <li class="nav__item"><a href="#" class="nav__link">Карбон</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Кастом</a></li>
+        <li class="nav__item"><a href="#cont" class="nav__link">Контакты</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Бизнесам</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Портфолио</a></li>
+        <li class="nav__item"><a href="#" class="nav__link">Отследить заказ</a></li>
+      </ul>
+    </nav>
+    <div class="header__links">
+      <div class="profile-drop dropdown">
+        <a href="#" class="dropbtn"><i class="icons ic-profile"></i></a>
+        <div class="dropdown-content">
+          <div class="dropdown-head">
+            <a href="#" class="to-state" data-state="login">ВОЙТИ</a><span>|</span><a
+              href="registr.html">ЗАРЕГИСТРИРОВАТЬСЯ</a>
+          </div>
+          <ul class="nav__list">
+            <li class="nav__item"><a href="#" class="nav__link">PRIME LOYALTY</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">мои данные</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">история заказов</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">адресная книга</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">избранное</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">премиальным клиентам</a></li>
+          </ul>
+        </div>
+      </div>
+      <a href="#"><i class="icons ic-like"></i></a>
+      <a href="order.html"><i class="icons ic-cart"></i></a>
+    </div>
+    <div class="nav__menu" id="nav-menu">
+      <img src="img/header/menu-logo.svg" class="menu__logo" alt="">
+      <nav class="nav">
+        <ul class="nav__list scrolls">
+          <li class="nav__item"><a href="#" class="nav__link">Каталог</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Карбон</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Кастом</a></li>
+          <li class="nav__item"><a href="#cont" class="nav__link">Контакты</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Бизнесам</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Портфолио</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Отследить заказ</a></li>
+        </ul>
+        <ul class="nav__list scrolls">
+          <li class="nav__item"><a href="#" class="nav__link to-state" data-state="login">войти в аккаунт</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Prime Loyal</a></li>
+          <li class="nav__item"><a href="#" class="nav__link to-state" data-state="callback">позвонить нам</a></li>
+        </ul>
+        <ul class="socials">
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3713_808)">
+                  <path
+                    d="M8.99758 5.99872C7.34499 5.99872 5.99636 7.34738 5.99636 9C5.99636 10.6526 7.34499 12.0013 8.99758 12.0013C10.6502 12.0013 11.9988 10.6526 11.9988 9C11.9988 7.34738 10.6502 5.99872 8.99758 5.99872ZM17.999 9C17.999 7.75716 18.0103 6.52558 17.9405 5.28499C17.8707 3.84402 18.0534 2.05371 16.9997 1C15.9437 -0.0559635 14.1557 0.129006 12.7148 0.0592092C11.472 -0.0105879 10.2404 0.000669702 8.99983 0.000669702C7.75701 0.000669702 6.52546 -0.0105879 5.28489 0.0592092C3.84395 0.129006 2.05367 -0.053712 0.999981 1C-0.0559625 2.05596 0.129004 3.84402 0.0592081 5.28499C-0.0105877 6.52783 0.000669689 7.75941 0.000669689 9C0.000669689 10.2406 -0.0105877 11.4744 0.0592081 12.715C0.129004 14.156 -0.053711 15.9463 0.999981 17C2.05593 18.056 3.84395 17.871 5.28489 17.9408C6.52771 18.0106 7.75927 17.9993 8.99983 17.9993C10.2426 17.9993 11.4742 18.0106 12.7148 17.9408C14.1557 17.871 15.946 18.0537 16.9997 17C18.0556 15.944 17.8707 14.156 17.9405 12.715C18.0125 11.4744 17.999 10.2428 17.999 9ZM8.99758 13.6179C6.44215 13.6179 4.3798 11.5555 4.3798 9C4.3798 6.44452 6.44215 4.38213 8.99758 4.38213C11.553 4.38213 13.6154 6.44452 13.6154 9C13.6154 11.5555 11.553 13.6179 8.99758 13.6179ZM13.8045 5.27148C13.2078 5.27148 12.726 4.78966 12.726 4.193C12.726 3.59635 13.2078 3.11452 13.8045 3.11452C14.4011 3.11452 14.8829 3.59635 14.8829 4.193C14.8831 4.33468 14.8554 4.475 14.8012 4.60593C14.7471 4.73686 14.6677 4.85582 14.5675 4.956C14.4673 5.05618 14.3483 5.13561 14.2174 5.18975C14.0865 5.24389 13.9462 5.27166 13.8045 5.27148Z" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_3713_808">
+                    <rect width="18" height="18" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M1.26 1.26C0 2.532 0 4.566 0 8.64V9.36C0 13.428 0 15.462 1.26 16.74C2.532 18 4.566 18 8.64 18H9.36C13.428 18 15.462 18 16.74 16.74C18 15.468 18 13.434 18 9.36V8.64C18 4.572 18 2.538 16.74 1.26C15.468 0 13.434 0 9.36 0H8.64C4.572 0 2.538 0 1.26 1.26ZM3.03516 5.4767C3.13116 10.1567 5.47116 12.9647 9.57516 12.9647H9.58116H9.81516V10.2887C11.3212 10.4387 12.4612 11.5427 12.9172 12.9647H15.0472C14.8287 12.1567 14.4414 11.4041 13.9109 10.7567C13.3803 10.1093 12.7185 9.58168 11.9692 9.2087C12.6406 8.79978 13.2206 8.25678 13.6728 7.61362C14.1249 6.97046 14.4396 6.24096 14.5972 5.4707H12.6652C12.2452 6.9587 10.9972 8.3087 9.81516 8.4347V5.4767H7.87716V10.6607C6.67716 10.3607 5.16516 8.9087 5.09916 5.4767H3.03516Z" />
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#" class="socials__link">
+              <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+                <g clip-path="url(#clip0_3713_828)">
+                  <path
+                    d="M3 0C1.338 0 0 1.33798 0 2.99996V15C0 16.662 1.338 18 3 18H15C16.662 18 18 16.662 18 15V2.99996C18 1.33798 16.662 0 15 0H3ZM14.1811 4.28761C14.5739 4.31936 14.6889 4.69293 14.5942 5.13131L12.8408 13.2525C12.7268 13.7806 12.3301 13.8458 11.852 13.4971L9.375 11.6895L8.01416 13.0034C7.80068 13.2092 7.404 13.269 7.28613 12.9082L6.26513 9.77775L3.85108 9.01606C2.9203 8.72205 3.58699 8.30502 3.90238 8.18257L13.6934 4.3813C13.8885 4.30561 14.0503 4.27842 14.1812 4.28891L14.1811 4.28761ZM12.4439 5.97803C12.3844 5.98937 12.3175 6.01405 12.2563 6.0526L6.73242 9.55361C6.69942 9.57345 6.66274 9.5706 6.69724 9.67662L7.59079 12.4188L7.77244 10.5554C7.77618 10.5194 7.77768 10.4959 7.81781 10.4602L12.4819 6.27371C12.7395 6.04241 12.622 5.94625 12.4438 5.97786L12.4439 5.97803Z" />
+                </g>
+                <defs>
+                  <clipPath id="clip0_3713_828">
+                    <rect width="18" height="18" />
+                  </clipPath>
+                </defs>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <nav class="nav sub-nav">
+        <ul class="nav__list scrolls">
+          <li class="nav__item"><a href="#" class="nav__link nav__link-back">меню</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Мобильные Аксессуары</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Тюнинг авто</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Багаж</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Эксклюзивные подарки</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Обувные ложки</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Динозавры</a></li>
+          <li class="nav__item"><a href="#" class="nav__link nav__link--disable">Кальяны</a></li>
+        </ul>
+      </nav>
+      <nav class="nav sub-nav">
+        <ul class="nav__list scrolls">
+          <li class="nav__item"><a href="#" class="nav__link nav__link-back">мобильные аксессуары</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Чехлы на iPhone</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Чехлы на Samsung</a></li>
+          <li class="nav__item"><a href="#" class="nav__link">Airpods Pro</a></li>
+        </ul>
+      </nav>
+      <div class="nav__close" id="nav-close"><i class="icons ic-close"></i></div>
+    </div>
+  </div>
+</header>
+
+    <main class="page-w">
+
+      <section class="registr">
+  <div class="container registr__container">
+    <img src="img/registr/registr-img.jpg" alt="" class="registr__img">
+    <div class="registr__content">
+      <div class="registr__head">
+        <a href="#" class="registr__head-login to-state" data-state="login">войти</a>
+        <a href="#" class="registr__head-registr">зарегистрироваться</a>
+      </div>
+      <h2 class="section-title">еще не зарегистрированы?</h2>
+      <div class="registr-text">Всего несколько шагов — и вы сможете воспользоваться всеми преимуществами программы лояльности!</div>
+      <form action="" class="form">
+        <label class="form-label">
+          <input type="email" class="form-input" placeholder="Ваш E-mail">
+        </label>
+        <button class="link"><span>зарегистрироваться</span><i class="icons ic-arrow-link"></i></button>
+        <a href="#" class="registr-form__link">я юр. лицо</a>
+        <div class="registr-text">Или зарегистрируйтесь с помощью аккаунта социальной сети</div>
+        <ul class="registr-socials">
+          <li class="registr-socials__item">
+            <a href="#">
+              <svg width="66" height="38" viewBox="0 0 66 38" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd" clip-rule="evenodd"
+                  d="M32.292 37.6118H36.2814C36.2814 37.6118 37.4783 37.4123 38.0767 36.8139C38.6751 36.2155 38.6751 35.0186 38.6751 35.0186C38.6751 35.0186 38.6751 29.8324 41.0687 29.0345C43.4624 28.2366 46.6539 34.2208 49.8454 36.4149C52.2391 38.2102 54.0343 37.8112 54.0343 37.8112L62.811 37.6118C62.811 37.6118 67.3988 37.4123 65.2047 33.6223C65.0052 33.4229 64.0078 31.0292 58.6221 26.0425C53.037 20.8562 53.8348 21.8536 60.4174 12.8774C64.4068 7.49173 66.0025 4.3002 65.6036 2.70444C65.2047 1.30815 62.2126 1.70709 62.2126 1.70709H52.2391C52.2391 1.70709 51.4412 1.50762 51.0423 1.90656C50.4438 2.3055 50.2444 2.90391 50.2444 2.90391C50.2444 2.90391 48.6486 7.09279 46.6539 10.6833C42.2656 18.0637 40.4703 18.4626 39.8719 18.0637C38.2761 17.0663 38.6751 13.6753 38.6751 11.4811C38.6751 4.3002 39.8719 1.30815 36.4809 0.510267C35.4836 0.310796 34.6857 0.111328 31.8931 0.111328C28.3026 0.111328 25.3106 0.111327 23.7148 0.909209C22.518 1.50762 21.7201 2.70444 22.3185 2.70444C22.9169 2.70444 24.5127 3.10338 25.3106 4.10074C26.1085 5.89597 26.1085 8.88802 26.1085 8.88802C26.1085 8.88802 26.7069 17.4652 24.7122 18.4626C23.3159 19.2605 21.5206 17.6647 17.5312 10.8827C15.5365 7.49173 13.9408 3.50232 13.9408 3.50232C13.9408 3.50232 13.7413 2.70444 13.1429 2.3055C12.5445 1.90656 11.5471 1.70709 11.5471 1.70709H2.17201C2.17201 1.70709 0.775718 1.70709 0.177307 2.3055C-0.221634 2.90391 0.177307 3.90126 0.177307 3.90126C0.177307 3.90126 7.55771 21.0557 15.9355 29.8324C23.7148 38.2102 32.292 37.6118 32.292 37.6118Z"
+                  />
+              </svg>
+            </a>
+          </li>
+          <li class="registr-socials__item">
+            <a href="#">
+              <svg width="23" height="39" viewBox="0 0 23 39" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M17.585 20.7246H15.0099C10.9653 20.7246 7.04306 18.2997 7.04306 12.2368C7.04306 5.92055 10.7199 3.34448 14.4582 3.34448H17.585V20.7246H17.585ZM21.6296 0.111328H14.6421C7.77898 0.111328 1.95635 4.4057 1.95635 12.7421C1.95635 17.7438 4.77656 21.4316 9.80044 23.2505L0.425354 37.1947C0.119155 37.6497 0.425354 38.0026 0.914189 38.0026H5.26535C5.63313 38.0026 5.87855 37.9017 6.00086 37.6497L14.5193 23.9575H17.585V37.6497C17.585 37.8008 17.7689 38.0026 18.0122 38.0026H21.8134C22.1812 38.0026 22.3039 37.8511 22.3039 37.5995V0.616949C22.3039 0.262438 22.0584 0.111328 21.6296 0.111328"
+                  />
+              </svg>
+            </a>
+          </li>
+          <li class="registr-socials__item">
+            <a href="#">
+              <svg width="46" height="39" viewBox="0 0 46 39" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M45.0905 3.56L38.2721 35.7154C37.7573 37.9844 36.4162 38.5492 34.5103 37.4809L24.1205 29.8249L19.108 34.647C18.5529 35.2022 18.0897 35.6653 17.0197 35.6653L17.7669 25.0851L37.0214 7.68654C37.859 6.94096 36.8391 6.5262 35.7207 7.2734L11.9168 22.2626L1.66906 19.0543C-0.559621 18.3587 -0.599966 16.8256 2.13385 15.7556L42.2163 0.312994C44.0722 -0.382562 45.6957 0.726132 45.0905 3.56161V3.56Z"
+                  />
+              </svg>
+            </a>
+          </li>
+          <li class="registr-socials__item">
+            <a href="#">
+              <svg width="19" height="39" viewBox="0 0 19 39" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M5.20718 38.0026V20.2229H0.505859V13.8214H5.20718V8.35362C5.20718 4.05702 7.98427 0.111328 14.3833 0.111328C16.9741 0.111328 18.8899 0.359705 18.8899 0.359705L18.739 6.33766C18.739 6.33766 16.7852 6.31863 14.6531 6.31863C12.3455 6.31863 11.9758 7.38205 11.9758 9.14707V13.8214H18.9224L18.6201 20.2229H11.9758V38.0026H5.20718Z"
+                  />
+              </svg>
+            </a>
+          </li>
+          <li class="registr-socials__item">
+            <a href="#">
+              <svg width="38" height="38" viewBox="0 0 38 38" xmlns="http://www.w3.org/2000/svg">
+                <path
+                  d="M36.6411 15.264C36.8741 16.5126 37.001 17.8179 37.001 19.1801C37.001 29.8351 29.8699 37.4115 19.0993 37.4115C16.6499 37.4122 14.2244 36.9303 11.9613 35.9933C9.69827 35.0564 7.642 33.6826 5.91003 31.9507C4.17807 30.2187 2.80434 28.1624 1.86735 25.8994C0.930362 23.6363 0.448473 21.2108 0.44922 18.7614C0.448473 16.312 0.930362 13.8865 1.86735 11.6234C2.80434 9.36038 4.17807 7.30411 5.91003 5.57214C7.642 3.84018 9.69827 2.46645 11.9613 1.52946C14.2244 0.592471 16.6499 0.110582 19.0993 0.111329C24.135 0.111329 28.3429 1.96421 31.5712 4.97278L26.3138 10.2302V10.2169C24.3567 8.35268 21.8729 7.39592 19.0993 7.39592C12.9458 7.39592 7.94411 12.5946 7.94411 18.75C7.94411 24.9036 12.9458 30.1136 19.0993 30.1136C24.6826 30.1136 28.4831 26.9213 29.2636 22.5373H19.0993V15.264H36.6429H36.6411Z"
+                  />
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="form-accept">Входя в систему через социальную сеть, вы принимаете условия использования и политику конфиденциальности социальной
+        сети. С информацией об использовании ваших данных на этом сайте можно ознакомиться в разделе <a href="politika.html">политикой конфиденциальности</a></div>
+      </form>
+    </div>
+  </div>
+</section>
+
+    </main>
+
+    <!--------Footer--------->
+<footer class="footer">
+  <div class="container">
+    <a href="index.html" class="footer__logo">
+      <img src="img/logo.svg" alt="">
+      PRIME CARBON
+    </a>
+    <div class="footer__container">
+      <nav class="footer-nav">
+        <div class="footer-nav-title">навигация</div>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item"><a href="catalog.html" class="footer-nav__link">КАТАЛОГ</a></li>
+          <li class="footer-nav__item"><a href="#" class="footer-nav__link">КАРБОН</a></li>
+          <li class="footer-nav__item"><a href="#" class="footer-nav__link">КАСТОМ</a></li>
+          <li class="footer-nav__item"><a href="#" class="footer-nav__link">КОРПОРАТИВНЫМ КЛИЕНТАМ</a></li>
+          <li class="footer-nav__item"><a href="#" class="footer-nav__link">ПОРТФОЛИО</a></li>
+        </ul>
+      </nav>
+      <nav class="footer-nav">
+        <div class="footer-nav-title">контакты</div>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">+7 929 202-24-56 — НОМЕР <br>ТЕЛЕФОНА ДЛЯ МЕССЕНДЖЕРОВ</li>
+          <li class="footer-nav__item"><a href="mailto:primecarbon@yandex.ru" class="footer-nav__link">PRIMECARBON@YANDEX.RU</a></li>
+          <li class="footer-nav__item footer-nav__item--fluid"><a href="#" class="link"><span>узнать, где мой заказ?</span></a></li>
+        </ul>
+      </nav>
+      <nav class="footer-nav">
+        <div class="footer-nav-title">ИНН / КПП</div>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">6686127633 / 668601001</li>
+        </ul>
+        <div class="footer-nav-title">Юр. Адрес</div>
+        <ul class="footer-nav__list">
+          <li class="footer-nav__item">г. Екатеринбург ул.&nbsp;Фронтовых Бригад, д.&nbsp;18/2, помещ. 201</li>
+        </ul>
+      </nav>
+      <a href="#" class="link link-mob"><span>узнать, где мой заказ?</span></a>
+    </div>
+    <div class="footer__bot">
+      <div class="footer__copy">2022 © Все права защищены</div>
+      <ul class="socials">
+        <li class="socials__item">
+          <a href="#" class="socials__link">
+            <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_3713_808)">
+                <path
+                  d="M8.99758 5.99872C7.34499 5.99872 5.99636 7.34738 5.99636 9C5.99636 10.6526 7.34499 12.0013 8.99758 12.0013C10.6502 12.0013 11.9988 10.6526 11.9988 9C11.9988 7.34738 10.6502 5.99872 8.99758 5.99872ZM17.999 9C17.999 7.75716 18.0103 6.52558 17.9405 5.28499C17.8707 3.84402 18.0534 2.05371 16.9997 1C15.9437 -0.0559635 14.1557 0.129006 12.7148 0.0592092C11.472 -0.0105879 10.2404 0.000669702 8.99983 0.000669702C7.75701 0.000669702 6.52546 -0.0105879 5.28489 0.0592092C3.84395 0.129006 2.05367 -0.053712 0.999981 1C-0.0559625 2.05596 0.129004 3.84402 0.0592081 5.28499C-0.0105877 6.52783 0.000669689 7.75941 0.000669689 9C0.000669689 10.2406 -0.0105877 11.4744 0.0592081 12.715C0.129004 14.156 -0.053711 15.9463 0.999981 17C2.05593 18.056 3.84395 17.871 5.28489 17.9408C6.52771 18.0106 7.75927 17.9993 8.99983 17.9993C10.2426 17.9993 11.4742 18.0106 12.7148 17.9408C14.1557 17.871 15.946 18.0537 16.9997 17C18.0556 15.944 17.8707 14.156 17.9405 12.715C18.0125 11.4744 17.999 10.2428 17.999 9ZM8.99758 13.6179C6.44215 13.6179 4.3798 11.5555 4.3798 9C4.3798 6.44452 6.44215 4.38213 8.99758 4.38213C11.553 4.38213 13.6154 6.44452 13.6154 9C13.6154 11.5555 11.553 13.6179 8.99758 13.6179ZM13.8045 5.27148C13.2078 5.27148 12.726 4.78966 12.726 4.193C12.726 3.59635 13.2078 3.11452 13.8045 3.11452C14.4011 3.11452 14.8829 3.59635 14.8829 4.193C14.8831 4.33468 14.8554 4.475 14.8012 4.60593C14.7471 4.73686 14.6677 4.85582 14.5675 4.956C14.4673 5.05618 14.3483 5.13561 14.2174 5.18975C14.0865 5.24389 13.9462 5.27166 13.8045 5.27148Z" />
+              </g>
+              <defs>
+                <clipPath id="clip0_3713_808">
+                  <rect width="18" height="18" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link">
+            <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd"
+                d="M1.26 1.26C0 2.532 0 4.566 0 8.64V9.36C0 13.428 0 15.462 1.26 16.74C2.532 18 4.566 18 8.64 18H9.36C13.428 18 15.462 18 16.74 16.74C18 15.468 18 13.434 18 9.36V8.64C18 4.572 18 2.538 16.74 1.26C15.468 0 13.434 0 9.36 0H8.64C4.572 0 2.538 0 1.26 1.26ZM3.03516 5.4767C3.13116 10.1567 5.47116 12.9647 9.57516 12.9647H9.58116H9.81516V10.2887C11.3212 10.4387 12.4612 11.5427 12.9172 12.9647H15.0472C14.8287 12.1567 14.4414 11.4041 13.9109 10.7567C13.3803 10.1093 12.7185 9.58168 11.9692 9.2087C12.6406 8.79978 13.2206 8.25678 13.6728 7.61362C14.1249 6.97046 14.4396 6.24096 14.5972 5.4707H12.6652C12.2452 6.9587 10.9972 8.3087 9.81516 8.4347V5.4767H7.87716V10.6607C6.67716 10.3607 5.16516 8.9087 5.09916 5.4767H3.03516Z" />
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a href="#" class="socials__link">
+            <svg width="18" height="18" viewBox="0 0 18 18" xmlns="http://www.w3.org/2000/svg">
+              <g clip-path="url(#clip0_3713_828)">
+                <path
+                  d="M3 0C1.338 0 0 1.33798 0 2.99996V15C0 16.662 1.338 18 3 18H15C16.662 18 18 16.662 18 15V2.99996C18 1.33798 16.662 0 15 0H3ZM14.1811 4.28761C14.5739 4.31936 14.6889 4.69293 14.5942 5.13131L12.8408 13.2525C12.7268 13.7806 12.3301 13.8458 11.852 13.4971L9.375 11.6895L8.01416 13.0034C7.80068 13.2092 7.404 13.269 7.28613 12.9082L6.26513 9.77775L3.85108 9.01606C2.9203 8.72205 3.58699 8.30502 3.90238 8.18257L13.6934 4.3813C13.8885 4.30561 14.0503 4.27842 14.1812 4.28891L14.1811 4.28761ZM12.4439 5.97803C12.3844 5.98937 12.3175 6.01405 12.2563 6.0526L6.73242 9.55361C6.69942 9.57345 6.66274 9.5706 6.69724 9.67662L7.59079 12.4188L7.77244 10.5554C7.77618 10.5194 7.77768 10.4959 7.81781 10.4602L12.4819 6.27371C12.7395 6.04241 12.622 5.94625 12.4438 5.97786L12.4439 5.97803Z" />
+              </g>
+              <defs>
+                <clipPath id="clip0_3713_828">
+                  <rect width="18" height="18" />
+                </clipPath>
+              </defs>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </div>
+</footer>
+
+    <!--------Modal-------->
+
+<div class="state callback-modal" data-state="callback">
+	<div class="state-box">
+		<div class="close"></div>
+		<div class="sm-title">есть вопросы?</div>
+		<div class="section-subtitle">Мы с удовольствием вам перезвоним для обсуждения деталей!</div>
+    <form action="#" class="form">
+      <label class="form-label">
+        <input type="text" class="form-input" placeholder="Имя Фамилия">
+      </label>
+      <label class="form-label">
+        <input type="number" class="form-input" placeholder="Ваш контактный номер">
+      </label>
+      <div class="form-nav">
+        <button class="link"><span>жду звонка</span><i class="icons ic-arrow-link"></i></button>
+        <div class="form-accept">Нажимая на кнопку вы соглашаетесь с&nbsp;<a href="politika.html">политикой конфиденциальности</a></div>
+      </div>
+    </form>
+	</div>
+</div>
+
+<div class="state login-modal" data-state="login">
+	<div class="state-box">
+		<div class="state-head">
+			<div class="logo-d">
+				<img src="img/logo.svg" alt="">
+				PRIME CARBON
+			</div>
+			<div class="close"></div>
+		</div>
+		<div class="section-title">Войдите в учетную запись</div>
+    <form action="#" class="form">
+			<label class="form-label">
+				<input type="email" class="form-input" placeholder="Ваш E-mail">
+			</label>
+      <label class="form-label">
+        <input type="password" class="form-input" placeholder="пароль">
+      </label>
+      <div class="form-nav">
+				<div class="switch-container">
+					<label for="switch1" class="switch">
+						<input type="checkbox" id="switch1">
+						<span class="slider round"></span>
+					</label>
+					<p class="switch-text">Запомнить меня <i class="icons ic-tooltip tooltip">
+						<span class="tooltiptext">
+							<span>Упрощенный вход</span>
+							При выборе функции «Запомнить меня» будет активирован файл cookie,
+							который позволит вам оставаться авторизованным на сайте даже после завершения сеанса. Для обеспечения безопасности вашей
+							учетной записи используйте эту функцию только
+							на личных устройствах.
+						</span>
+					</i></p>
+				</div>
+        <button class="link"><span>войти</span><i class="icons ic-arrow-link"></i></button>
+      </div>
+			<a class="big-link">забыли пароль?</a>
+			<div class="form-accept">С информацией об использовании ваших данных на этом сайте можно ознакомиться в разделе <a href="politika.html">политика конфиденциальности</a></div>
+    </form>
+		<div class="modal-registr">
+			<div class="modal-registr-text">Новый пользователь?</div>
+			<a href="registr.html" class="big-link">зарегистрируйтесь прямо сейчас</a>
+		</div>
+	</div>
+</div>
+
+<div class="state order-modal" data-state="order">
+	<div class="state-box">
+		<div class="state-head">
+			<div class="section-title">ваша корзина</div>
+			<div class="close"></div>
+		</div>
+    <form action="#" class="form">
+      <div class="modal-registr-text">Ваш заказ:</div>
+      <div class="order-cart__cards">
+        <div class="order-cart__cards-item">
+          <img src="img/order/product-img.jpg" class="order-cart__cards-img" alt="">
+          <div class="order-cart__cards-info">
+            <div class="order-cart__cards-main">
+              <div class="order-cart__cards-name">Цельный чехол из карбона</div>
+              <div class="order-cart__cards-subname">iPhone 13 Pro Max</div>
+            </div>
+						<div class="number">
+							<button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
+							<input type="number" min="0" value="1" readonly>
+							<button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"></button>
+						</div>
+            <div class="order-cart__cards-price">5000₽</div>
+          </div>
+        </div>
+      </div>
+			<label class="form-label">
+				<input type="number" class="form-input" placeholder="Номер вашей карты лояльности">
+			</label>
+			<div class="order-modal-text"><span>Вам будет накоплено 50 бонусов!</span>
+			Сейчас доступно: 200 бонусов. До повышения уровня осталось 800 бонусов.</div>
+      <label for="checkbox2" class="checkbox">
+        <input type="checkbox" id="checkbox2">
+        <span>списать 200 бонусов</span>
+      </label>
+			<div class="order-cart__total">
+				<div class="order-cart__total-title">Итоговая сумма:</div>
+				<div class="order-cart__total-price">5000₽</div>
+			</div>
+      <div class="form-nav">
+        <button class="link"><span>перейти к оплате</span><i class="icons ic-arrow-link"></i></button>
+      </div>
+    </form>
+	</div>
+</div>
+
+<div class="state order-modal" data-state="order-nocard">
+	<div class="state-box">
+		<div class="state-head">
+			<div class="section-title">ваша корзина</div>
+			<div class="close"></div>
+		</div>
+    <form action="#" class="form">
+      <div class="modal-registr-text">Ваш заказ:</div>
+      <div class="order-cart__cards">
+        <div class="order-cart__cards-item">
+          <img src="img/order/product-img.jpg" class="order-cart__cards-img" alt="">
+          <div class="order-cart__cards-info">
+            <div class="order-cart__cards-main">
+              <div class="order-cart__cards-name">Цельный чехол из карбона</div>
+              <div class="order-cart__cards-subname">iPhone 13 Pro Max</div>
+            </div>
+						<div class="number">
+							<button class="number-minus" type="button" onclick="this.nextElementSibling.stepDown(); this.nextElementSibling.onchange();"></button>
+							<input type="number" min="0" value="1" readonly>
+							<button class="number-plus" type="button" onclick="this.previousElementSibling.stepUp(); this.previousElementSibling.onchange();"></button>
+						</div>
+            <div class="order-cart__cards-price">5000₽</div>
+          </div>
+        </div>
+      </div>
+			<label class="form-label">
+				<input type="number" class="form-input" placeholder="Номер вашей карты лояльности">
+			</label>
+			<div class="order-modal-text"><span>Не являетесь участником нашей программы лояльности?</span>
+			– Зарегистрируйтесь в личном кабинете и получите повышенный бонус на первую покупку.</div>
+			<div class="order-cart__total">
+				<div class="order-cart__total-title">Итоговая сумма:</div>
+				<div class="order-cart__total-price">5000₽</div>
+			</div>
+      <div class="form-nav">
+        <button class="link"><span>перейти к оплате</span><i class="icons ic-arrow-link"></i></button>
+      </div>
+    </form>
+	</div>
+</div>
+
+<div class="state rejection-modal" data-state="rejection">
+	<div class="state-box">
+		<div class="close"></div>
+		<div class="rejection-modal-title">Вы действительно хотите отказаться от программы лояльности <span>Prime Loyal</span>?</div>
+		<button class="rejection-modal-btn">отказаться</button>
+		<button class="rejection-modal-close">сохранить привелегии</button>
+	</div>
+</div>
+
+  </div>
+
+  <!-- Script-->
+<link href="css/fancybox.css" rel="stylesheet">
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/jquery.maskedinput.js"></script>
+<!-- Swiper JS -->
+<script src="js/swiper-bundle.min.js"></script>
+<script src="js/air-datepicker.min.js"></script>
+<!-- <script src="js/jquery.fancybox.min.js"></script> -->
+<!-- <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script> -->
+<!-- <script src="https://cdn.plyr.io/3.7.2/plyr.polyfilled.js"></script> -->
+<script src="js/app.min.js"></script>
+
+</body>
+
+</html>
